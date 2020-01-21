@@ -1,0 +1,24 @@
+{
+  "name": "dev-starter-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-recaptcha": "^5.0.1",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.3.1",
+    "mongoose": "^5.8.9",
+    "passport": "^0.4.1",
+    "passport-google": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.4"
+  }
+}
