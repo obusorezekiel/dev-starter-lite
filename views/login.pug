@@ -1,0 +1,35 @@
+include includes/header.includes.pug
+
+html
+  body
+    .container
+      .section-header
+      main.login-form
+        .cotainer
+          .row.justify-content-center
+            .col-md-8
+              .card
+                .card-header Login
+                .card-body
+                  form(action="/login" method="POST")
+                    .form-group.row
+                      label.col-md-4.col-form-label.text-md-right(for="email_address") E-Mail Address
+                      .col-md-6
+                        input#email.form-control(type="text" name="email" autofocus="")
+                    .form-group.row
+                      label.col-md-4.col-form-label.text-md-right(for="password") Password
+                      .col-md-6
+                        input#password.form-control(type="password" name="password")
+                    .form-group.row
+                      .col-md-6.offset-md-4
+                        .checkbox
+                          label
+                            input(type="checkbox" name="remember")
+                            |  Remember Me
+                    .col-md-6.offset-md-4
+                      button.btn.btn-primary(type="submit")
+                        | Login
+                      a.btn.btn-link(href="#")
+                        | Forgot Your Password?
+
+include includes/footer.includes.pug
