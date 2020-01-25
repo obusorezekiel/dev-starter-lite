@@ -15,10 +15,12 @@
     "express-recaptcha": "^5.0.1",
     "express-session": "^1.17.0",
     "express-validator": "^6.3.1",
+    "flash": "^1.1.0",
     "mongoose": "^5.8.9",
     "passport": "^0.4.1",
     "passport-google": "^0.3.0",
     "passport-local": "^1.0.0",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "validator": "^12.2.0"
   }
 }

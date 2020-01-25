@@ -9,27 +9,29 @@ html
           .row.justify-content-center
             .col-md-8
               .card
-                .card-header Login
                 .card-body
-                  form(action="/login" method="POST")
+                  form(action="/contact" method="POST")
+                    .form-group.row
+                      label.col-md-4.col-form-label.text-md-right(for="full-name") Full name
+                      .col-md-6
+                        input#email.form-control(type="text" name="name" autofocus="")
                     .form-group.row
                       label.col-md-4.col-form-label.text-md-right(for="email_address") E-Mail Address
                       .col-md-6
                         input#email.form-control(type="text" name="email" autofocus="")
                     .form-group.row
-                      label.col-md-4.col-form-label.text-md-right(for="password") Password
+                      label.col-md-4.col-form-label.text-md-right(for="subject") Subject
                       .col-md-6
-                        input#password.form-control(type="password" name="password")
+                        input#email.form-control(type="text" name="subject" autofocus="")
+                    .form-group.row
+                      label.col-md-4.col-form-label.text-md-right(for="message") Message
+                      .col-md-6
+                        textarea#email.form-control(type="text" name="message" autofocus="")
                     .form-group.row
                       .col-md-6.offset-md-4
                         .checkbox
-                          label
-                            input(type="checkbox" name="remember")
-                            |  Remember Me
                     .col-md-6.offset-md-4
                       button.btn.btn-primary(type="submit")
-                        | Login
-                      a.btn.btn-link(href="/forgot-password")
-                        | Forgot Your Password?
+                        | Contact Us
 script(src="vendor/jquery/jquery.min.js")
 script(src="vendor/bootstrap/js/bootstrap.bundle.min.js")

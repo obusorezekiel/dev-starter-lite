@@ -9,5 +9,7 @@ router.get('/login', authController.getLogin);
 
 router.get('/register', authController.getRegister);
 
+router.get('/forgot-password', authController.getForgotPassword);
+
 
 module.exports = router;
